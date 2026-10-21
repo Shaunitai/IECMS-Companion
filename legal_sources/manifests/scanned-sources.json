@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "synthetic": false,
+  "note": "Scanned PDFs that have no text layer and therefore need OCR. This manifest exists so those documents can be re-ingested (OCR is slow) without re-reading every text-based source in real-sources.json. Each entry still requires a human verification step (manage.py verify_source) before it may ground an authoritative answer.",
+  "sources": [
+    {
+      "source_id": "zw-constitution-amendment-no-20-2013",
+      "path": "../documents/Source Documents/ACTS OF PARLIAMENT/Constitution-of-Zimbabwe-Amendment_No_20_-_14-05-2013.pdf",
+      "metadata": {
+        "source_id": "zw-constitution-amendment-no-20-2013",
+        "title": "Constitution of Zimbabwe Amendment (No. 20) Act, 2013",
+        "issuing_authority": "Parliament of Zimbabwe",
+        "document_type": "Constitution",
+        "tier": 1,
+        "court_or_jurisdiction": "Zimbabwe",
+        "publication_date": "2013-05-14",
+        "effective_date": "2013-05-22",
+        "verification_status": "pending",
+        "ocr": true,
+        "notes": "Local official copy supplied for the definitions corpus. The PDF is a scan with no text layer, so ingestion uses OCR; page numbers refer to the PDF pages and OCR text may contain recognition errors."
+      }
+    },
+    {
+      "source_id": "en-collocations-dictionary",
+      "path": "../documents/Source Documents/LEGAL ENGLISH GLOSSARY/Oxford Collocations Dictionary for Students of English.pdf",
+      "metadata": {
+        "source_id": "en-collocations-dictionary",
+        "title": "Oxford Collocations Dictionary for Students of English",
+        "issuing_authority": "Oxford University Press",
+        "document_type": "Language glossary (English collocations)",
+        "tier": 4,
+        "court_or_jurisdiction": "Not jurisdiction-specific (language reference)",
+        "verification_status": "pending",
+        "ocr": true,
+        "notes": "Word-usage reference used to explain English legal terminology in plain language. Not a legal authority and never cited as law. The PDF is a scan with no text layer, so ingestion uses OCR; OCR text may contain recognition errors."
+      }
+    }
+  ]
+}

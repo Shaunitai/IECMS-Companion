@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "note": "SYNTHETIC SOURCES ONLY. These entries are software test fixtures used to exercise the retrieval, grounding and citation pipeline. They are not official Zimbabwean legal authorities, they have not been verified against any instrument, and they must never be presented as law. Real approved sources must be added by an authorised person, given a real verification status, and verified before they may ground an authoritative answer.",
+  "sources": [
+    {
+      "source_id": "syn-affidavit",
+      "path": "synthetic/affidavit.md",
+      "metadata": {
+        "source_id": "syn-affidavit",
+        "title": "SYNTHETIC FIXTURE - Affidavit",
+        "issuing_authority": "SYNTHETIC - not an official authority",
+        "document_type": "Synthetic test fixture",
+        "tier": 99,
+        "court_or_jurisdiction": "Not applicable (synthetic)",
+        "verification_status": "synthetic",
+        "version_info": "Fixture v1",
+        "notes": "Created for software testing. Not a legal authority."
+      }
+    },
+    {
+      "source_id": "syn-condonation",
+      "path": "synthetic/application-for-condonation.md",
+      "metadata": {
+        "source_id": "syn-condonation",
+        "title": "SYNTHETIC FIXTURE - Application for Condonation",
+        "issuing_authority": "SYNTHETIC - not an official authority",
+        "document_type": "Synthetic test fixture",
+        "tier": 99,
+        "court_or_jurisdiction": "Not applicable (synthetic)",
+        "verification_status": "synthetic",
+        "version_info": "Fixture v1",
+        "notes": "Created for software testing. Not a legal authority."
+      }
+    },
+    {
+      "source_id": "syn-notice-of-set-down",
+      "path": "synthetic/notice-of-set-down.md",
+      "metadata": {
+        "source_id": "syn-notice-of-set-down",
+        "title": "SYNTHETIC FIXTURE - Notice of Set Down",
+        "issuing_authority": "SYNTHETIC - not an official authority",
+        "document_type": "Synthetic test fixture",
+        "tier": 99,
+        "court_or_jurisdiction": "Not applicable (synthetic)",
+        "verification_status": "synthetic",
+        "version_info": "Fixture v1",
+        "notes": "Created for software testing. Not a legal authority."
+      }
+    },
+    {
+      "source_id": "syn-default-judgment",
+      "path": "synthetic/default-judgment.md",
+      "metadata": {
+        "source_id": "syn-default-judgment",
+        "title": "SYNTHETIC FIXTURE - Default Judgment",
+        "issuing_authority": "SYNTHETIC - not an official authority",
+        "document_type": "Synthetic test fixture",
+        "tier": 99,
+        "court_or_jurisdiction": "Not applicable (synthetic)",
+        "verification_status": "synthetic",
+        "version_info": "Fixture v1",
+        "notes": "Created for software testing. Not a legal authority."
+      }
+    },
+    {
+      "source_id": "syn-order-and-judgment",
+      "path": "synthetic/order-and-judgment.md",
+      "metadata": {
+        "source_id": "syn-order-and-judgment",
+        "title": "SYNTHETIC FIXTURE - Order of Court and Judgment",
+        "issuing_authority": "SYNTHETIC - not an official authority",
+        "document_type": "Synthetic test fixture",
+        "tier": 99,
+        "court_or_jurisdiction": "Not applicable (synthetic)",
+        "verification_status": "synthetic",
+        "version_info": "Fixture v1",
+        "notes": "Created for software testing. Not a legal authority."
+      }
+    }
+  ]
+}

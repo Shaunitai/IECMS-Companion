@@ -1,0 +1,215 @@
+{
+  "version": 1,
+  "synthetic": false,
+  "note": "Approved definition and legal sources. These are real documents (local official copies plus one public language glossary) used to ground terminology and definition lookups. They replace reliance on the JSC portal, which was unreachable from the development environment. Each entry still requires a human verification step (manage.py verify_source) before it may ground an authoritative answer.",
+  "sources": [
+    {
+      "source_id": "zw-companies-and-other-business-entities-act",
+      "path": "../documents/Source Documents/ACTS OF PARLIAMENT/COMPANIES AND OTHER BUSINESS ENTITIES ACT.pdf",
+      "metadata": {
+        "source_id": "zw-companies-and-other-business-entities-act",
+        "title": "Companies and Other Business Entities Act",
+        "issuing_authority": "Parliament of Zimbabwe",
+        "document_type": "Act of Parliament",
+        "tier": 1,
+        "court_or_jurisdiction": "Zimbabwe",
+        "verification_status": "pending",
+        "notes": "Local official copy supplied for the definitions corpus."
+      }
+    },
+    {
+      "source_id": "zw-labour-act-2018",
+      "path": "../documents/Source Documents/ACTS OF PARLIAMENT/Consolidated Labour Act 2018.pdf",
+      "metadata": {
+        "source_id": "zw-labour-act-2018",
+        "title": "Consolidated Labour Act (2018)",
+        "issuing_authority": "Parliament of Zimbabwe",
+        "document_type": "Act of Parliament",
+        "tier": 1,
+        "court_or_jurisdiction": "Zimbabwe",
+        "verification_status": "pending",
+        "notes": "Local official copy supplied for the definitions corpus."
+      }
+    },
+    {
+      "source_id": "zw-constitution-amendment-no-20-2013",
+      "path": "../documents/Source Documents/ACTS OF PARLIAMENT/Constitution-of-Zimbabwe-Amendment_No_20_-_14-05-2013.pdf",
+      "metadata": {
+        "source_id": "zw-constitution-amendment-no-20-2013",
+        "title": "Constitution of Zimbabwe Amendment (No. 20) Act, 2013",
+        "issuing_authority": "Parliament of Zimbabwe",
+        "document_type": "Constitution",
+        "tier": 1,
+        "court_or_jurisdiction": "Zimbabwe",
+        "publication_date": "2013-05-14",
+        "effective_date": "2013-05-22",
+        "verification_status": "pending",
+        "ocr": true,
+        "notes": "Local official copy supplied for the definitions corpus. The PDF is a scan with no text layer, so ingestion uses OCR; page numbers refer to the PDF pages and OCR text may contain recognition errors."
+      }
+    },
+    {
+      "source_id": "zw-high-court-act",
+      "path": "../documents/Source Documents/ACTS OF PARLIAMENT/HIGH COURT ACT.pdf",
+      "metadata": {
+        "source_id": "zw-high-court-act",
+        "title": "High Court Act",
+        "issuing_authority": "Parliament of Zimbabwe",
+        "document_type": "Act of Parliament",
+        "tier": 1,
+        "court_or_jurisdiction": "Zimbabwe",
+        "verification_status": "pending",
+        "notes": "Local official copy supplied for the definitions corpus."
+      }
+    },
+    {
+      "source_id": "zw-income-tax-act",
+      "path": "../documents/Source Documents/ACTS OF PARLIAMENT/INCOME TAX ACT.pdf",
+      "metadata": {
+        "source_id": "zw-income-tax-act",
+        "title": "Income Tax Act",
+        "issuing_authority": "Parliament of Zimbabwe",
+        "document_type": "Act of Parliament",
+        "tier": 1,
+        "court_or_jurisdiction": "Zimbabwe",
+        "verification_status": "pending",
+        "notes": "Local official copy supplied for the definitions corpus."
+      }
+    },
+    {
+      "source_id": "zw-liquor-act",
+      "path": "../documents/Source Documents/ACTS OF PARLIAMENT/LIQUOR ACT.pdf",
+      "metadata": {
+        "source_id": "zw-liquor-act",
+        "title": "Liquor Act",
+        "issuing_authority": "Parliament of Zimbabwe",
+        "document_type": "Act of Parliament",
+        "tier": 1,
+        "court_or_jurisdiction": "Zimbabwe",
+        "verification_status": "pending",
+        "notes": "Local official copy supplied for the definitions corpus."
+      }
+    },
+    {
+      "source_id": "zw-si-104-2024",
+      "path": "../documents/Source Documents/ACTS OF PARLIAMENT/Statutory Instrument 104 of 2024.pdf",
+      "metadata": {
+        "source_id": "zw-si-104-2024",
+        "title": "Statutory Instrument 104 of 2024",
+        "issuing_authority": "Parliament of Zimbabwe",
+        "document_type": "Statutory instrument",
+        "tier": 1,
+        "court_or_jurisdiction": "Zimbabwe",
+        "publication_date": "2024-01-01",
+        "verification_status": "pending",
+        "notes": "Local official copy supplied for the definitions corpus."
+      }
+    },
+    {
+      "source_id": "zw-magistrates-court-civil-amendment-rules-2025",
+      "path": "../documents/Source Documents/COURT RULES/Magistrates Court (Civil) (Amendment) Rules 2025 (No 8).pdf",
+      "metadata": {
+        "source_id": "zw-magistrates-court-civil-amendment-rules-2025",
+        "title": "Magistrates Court (Civil) (Amendment) Rules, 2025 (No. 8)",
+        "issuing_authority": "Chief Justice / Judicial Service Commission",
+        "document_type": "Court rules",
+        "tier": 2,
+        "court_or_jurisdiction": "Zimbabwe (Magistrates Court)",
+        "publication_date": "2025-01-01",
+        "verification_status": "pending",
+        "notes": "Local official copy supplied for the definitions corpus."
+      }
+    },
+    {
+      "source_id": "zw-high-court-rules-2021",
+      "path": "../documents/Source Documents/COURT RULES/SI 2021-202  High Court Rules, 2021.pdf",
+      "metadata": {
+        "source_id": "zw-high-court-rules-2021",
+        "title": "High Court Rules, 2021 (SI 202 of 2021)",
+        "issuing_authority": "Chief Justice / Judicial Service Commission",
+        "document_type": "Court rules",
+        "tier": 2,
+        "court_or_jurisdiction": "Zimbabwe (High Court)",
+        "publication_date": "2021-01-01",
+        "verification_status": "pending",
+        "notes": "Local official copy supplied for the definitions corpus."
+      }
+    },
+    {
+      "source_id": "zw-supreme-court-rules-2025",
+      "path": "../documents/Source Documents/COURT RULES/Supreme Court Rules 2025.pdf",
+      "metadata": {
+        "source_id": "zw-supreme-court-rules-2025",
+        "title": "Supreme Court Rules, 2025",
+        "issuing_authority": "Chief Justice / Judicial Service Commission",
+        "document_type": "Court rules",
+        "tier": 2,
+        "court_or_jurisdiction": "Zimbabwe (Supreme Court)",
+        "publication_date": "2025-01-01",
+        "verification_status": "pending",
+        "notes": "Local official copy supplied for the definitions corpus."
+      }
+    },
+    {
+      "source_id": "zw-practice-direction-3-2020",
+      "path": "../documents/Source Documents/PRACTICE DIRECTIONS AND OFFICIAL COURT NOTICES/PRACTICE DIRECTION 3 OF 2020 2020-08-11 18_56_25.pdf",
+      "metadata": {
+        "source_id": "zw-practice-direction-3-2020",
+        "title": "Practice Direction 3 of 2020",
+        "issuing_authority": "Chief Justice / Judicial Service Commission",
+        "document_type": "Practice direction",
+        "tier": 2,
+        "court_or_jurisdiction": "Zimbabwe",
+        "publication_date": "2020-08-11",
+        "verification_status": "pending",
+        "notes": "Local official copy supplied for the definitions corpus."
+      }
+    },
+    {
+      "source_id": "zw-court-form-affidavit",
+      "path": "../documents/Source Documents/COURT FORMS AND FILING TEMPLATES/AFFIDAVIT.pdf",
+      "metadata": {
+        "source_id": "zw-court-form-affidavit",
+        "title": "Court Form: Affidavit",
+        "issuing_authority": "Judicial Service Commission (court form)",
+        "document_type": "Court form / filing template",
+        "tier": 2,
+        "court_or_jurisdiction": "Zimbabwe",
+        "verification_status": "pending",
+        "notes": "Official court form supplied for the definitions corpus."
+      }
+    },
+    {
+      "source_id": "zw-iecms-user-manual",
+      "path": "../documents/Source Documents/IECMs user manual, help guides, and approved interface/iecms user manual.pdf",
+      "metadata": {
+        "source_id": "zw-iecms-user-manual",
+        "title": "IECMS Getting Started Guide \u2014 Public Users, Version 1.1 (2021)",
+        "issuing_authority": "Judicial Service Commission (IECMS)",
+        "document_type": "User manual / procedural guidance",
+        "tier": 3,
+        "court_or_jurisdiction": "Zimbabwe",
+        "publication_date": "2021",
+        "version_info": "Version 1.1 (2021)",
+        "verification_status": "pending",
+        "ocr": true,
+        "notes": "Official IECMS Getting Started Guide for public users, supplied by the project owner. The PDF is a scan with no text layer, so ingestion uses OCR; page numbers refer to the PDF pages. The live IECMS interface may have changed since 2021."
+      }
+    },
+    {
+      "source_id": "en-collocations-dictionary",
+      "path": "../documents/Source Documents/LEGAL ENGLISH GLOSSARY/Oxford Collocations Dictionary for Students of English.pdf",
+      "metadata": {
+        "source_id": "en-collocations-dictionary",
+        "title": "Oxford Collocations Dictionary for Students of English",
+        "issuing_authority": "Oxford University Press",
+        "document_type": "Language glossary (English collocations)",
+        "tier": 4,
+        "court_or_jurisdiction": "Not jurisdiction-specific (language reference)",
+        "verification_status": "pending",
+        "ocr": true,
+        "notes": "Word-usage reference used to explain English legal terminology in plain language. Not a legal authority and never cited as law. The PDF is a scan with no text layer, so ingestion uses OCR; OCR text may contain recognition errors."
+      }
+    }
+  ]
+}

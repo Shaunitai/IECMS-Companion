@@ -1,0 +1,52 @@
+{% load static %}<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>{% block title %}IECMS Companion{% endblock %}</title>
+  <meta name="description" content="IECMS Companion explains Zimbabwean legal terminology and court procedure, and shows you how to use the Integrated Electronic Case Management System (IECMS), in plain English. General information only, not legal advice.">
+  <script>
+    (function () {
+      var saved = null;
+      try { saved = localStorage.getItem("theme"); } catch (e) { /* ignore */ }
+      var prefersDark =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
+      var theme = saved || (prefersDark ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <link rel="stylesheet" href="{% static 'chatbot/css/styles.css' %}?v=sources-2">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="app-header">
+    <div class="app-header__inner">
+      <p class="app-header__brand">
+        <span class="app-header__mark" aria-hidden="true">IC</span>
+        <span class="app-header__name">IECMS Companion</span>
+      </p>
+      <p class="app-header__tagline">
+        Plain-language help with legal terms, court procedure and using IECMS
+        in Zimbabwe.
+      </p>
+      <button type="button" id="theme-toggle" class="theme-toggle"
+              aria-label="Toggle dark mode">🌙 Dark</button>
+    </div>
+  </header>
+
+  <main id="main" class="app-main">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="app-footer">
+    <div class="app-footer__inner">
+      {% block footer %}{% endblock %}
+    </div>
+  </footer>
+
+  <script src="{% static 'chatbot/js/chat.js' %}?v=sources-2" defer></script>
+</body>
+</html>

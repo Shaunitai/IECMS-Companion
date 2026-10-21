@@ -1,0 +1,141 @@
+{% extends "chatbot/base.html" %}
+
+{% block title %}IECMS Companion &mdash; legal terminology and IECMS guidance{% endblock %}
+
+{% block content %}
+<section class="panel intro" aria-labelledby="intro-heading">
+  <p class="intro__eyebrow">Legal information + IECMS user guide</p>
+  <h1 id="intro-heading" class="intro__title">IECMS Companion</h1>
+  <p class="intro__purpose">
+    IECMS Companion explains Zimbabwean legal terms and general court
+    procedure, and shows you how to use the
+    <strong>Integrated Electronic Case Management System (IECMS)</strong>
+    using its approved user guide.
+  </p>
+  <ul class="intro__capabilities">
+    <li>
+      <strong>Legal terms and procedure</strong> &mdash; plain-language
+      explanations grounded in approved legal sources.
+    </li>
+    <li>
+      <strong>Using IECMS</strong> &mdash; documented steps for accounts,
+      login, password recovery, filing a case, adding parties, signing and
+      merging documents, submitting a case, payments, My Workspace, case
+      records, notifications and the calendar.
+    </li>
+    <li>
+      <strong>Traceable answers</strong> &mdash; citations show the source
+      title and, for the manual, the PDF page number.
+    </li>
+    <li>
+      <strong>Document summaries</strong> &mdash; upload a PDF, Word, text,
+      Markdown or HTML file for a plain-language summary. A summary is
+      generated from your file, not from the approved sources.
+    </li>
+    <li>
+      <strong>Follow-up questions</strong> &mdash; continue from the previous
+      answer with &ldquo;Explain the next step&rdquo; or &ldquo;What does this
+      option mean?&rdquo;
+    </li>
+  </ul>
+  <p class="intro__boundary">
+    This tool explains <strong>general information only</strong>. It does not
+    advise you on your own case. It cannot access your IECMS account, case
+    records, notifications or calendar, and it cannot file, sign, merge,
+    submit or pay for anything for you.
+  </p>
+  <p class="intro__note">
+    IECMS guidance is based on the
+    <em>IECMS Getting Started Guide &mdash; Public Users, Version 1.1 (2021)</em>.
+    The live interface may have changed, so confirm the current steps in IECMS.
+  </p>
+</section>
+
+{% if mock_mode %}
+  <div class="banner banner--notice" role="note">
+    <strong>Development mode.</strong> {{ mock_notice }}
+  </div>
+{% endif %}
+
+<section class="panel chat" aria-labelledby="chat-heading">
+  <h2 id="chat-heading" class="visually-hidden">Conversation</h2>
+
+  <div id="chat-log" class="chat__log" role="log" aria-live="polite"
+       aria-relevant="additions text" aria-label="Conversation">
+    <div id="chat-empty" class="chat__empty">
+      <p class="chat__empty-title">No messages yet</p>
+      <p class="chat__empty-hint">Try one of these example questions:</p>
+      <ul class="chips">
+        {% for question in example_questions %}
+          <li>
+            <button type="button" class="chip js-example"
+                    data-question="{{ question }}">{{ question }}</button>
+          </li>
+        {% endfor %}
+      </ul>
+      <p class="chat__empty-note">
+        These fictional or general examples do not concern a real case. IECMS
+        answers come from the approved user guide.
+      </p>
+    </div>
+  </div>
+
+  <p id="chat-status" class="chat__status" role="status" aria-live="polite" hidden></p>
+  <p id="chat-error" class="chat__error" role="alert" hidden></p>
+
+  <form id="chat-form" class="composer" method="post"
+        data-endpoint="{% url 'chatbot:chat' %}"
+        data-summarise-endpoint="{% url 'chatbot:summarise' %}"
+        data-max-length="{{ max_question_length }}"
+        data-max-upload-bytes="{{ max_upload_bytes }}"
+        novalidate>
+    {% csrf_token %}
+    <label class="composer__label" for="question">Your question</label>
+    <div class="composer__row">
+      <textarea id="question" name="question" class="composer__input" rows="2"
+                maxlength="{{ max_question_length }}" required
+                placeholder="e.g. What is an affidavit? How do I file a case in IECMS?"
+                aria-describedby="composer-help composer-counter"></textarea>
+      <button type="submit" id="send" class="composer__send">Send</button>
+    </div>
+    <div class="composer__meta">
+      <p id="composer-help" class="composer__help">
+        Ask about legal terms, court procedure or how to use IECMS. Do not
+        include personal, case or login details.
+      </p>
+      <p id="composer-counter" class="composer__counter">
+        0 / {{ max_question_length }}
+      </p>
+    </div>
+
+    {% if document_summary_enabled %}
+    <div class="upload">
+      <input type="file" id="document-upload" class="upload__input"
+             accept=".pdf,.docx,.txt,.md,.markdown,.html,.htm" hidden>
+      <button type="button" id="upload-button" class="upload__button">
+        Upload document
+      </button>
+      <span id="upload-name" class="upload__name" aria-live="polite"></span>
+      <p class="upload__help">
+        Summarise a document (PDF, Word, text, Markdown or HTML, up to
+        {{ max_upload_mb }} MB). Do not upload personal or confidential
+        details. The file is processed temporarily and deleted.
+      </p>
+    </div>
+    {% endif %}
+  </form>
+
+  <p class="reminder">
+    <span class="reminder__icon" aria-hidden="true">&#128274;</span>
+    {{ privacy_reminder }}
+  </p>
+</section>
+{% endblock %}
+
+{% block footer %}
+<p class="disclaimer">{{ disclaimer }}</p>
+<p class="footer-meta">
+  Prototype for review &mdash; not an official Judicial Service Commission
+  service.
+</p>
+{% endblock %}

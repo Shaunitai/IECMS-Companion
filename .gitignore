@@ -1,0 +1,50 @@
+# --- Secrets and local configuration ------------------------------------
+# Never commit real credentials or local environment files.
+.env
+.env.*
+!.env.example
+
+# --- Python --------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Virtual environments ------------------------------------------------
+.venv/
+venv/
+env/
+
+# --- Django --------------------------------------------------------------
+*.log
+db.sqlite3
+db.sqlite3-journal
+/staticfiles/
+/media/
+
+# --- Local legal source material -----------------------------------------
+# Source documents, extracted text and the built index stay out of the
+# repository. The registry, manifests and synthetic fixtures are committed.
+legal_sources/documents/
+legal_sources/extracted/
+legal_sources/index/
+
+# --- Scratch output -------------------------------------------------------
+_testout.txt
+
+# --- Tooling / editors ---------------------------------------------------
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+.DS_Store
+Thumbs.db
+.pytest_cache/
+.coverage
+htmlcov/

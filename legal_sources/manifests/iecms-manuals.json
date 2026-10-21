@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "synthetic": false,
+  "note": "Approved IECMS procedural manuals. These ground only IECMS how-to answers; they are not legal authorities for definitions. Add further approved manuals here and list their source ids in IECMS_MANUAL_SOURCE_IDS. Each entry must be verified by a human before it may ground an answer.",
+  "sources": [
+    {
+      "source_id": "zw-iecms-user-manual",
+      "path": "../documents/Source Documents/IECMs user manual, help guides, and approved interface/iecms user manual.pdf",
+      "metadata": {
+        "source_id": "zw-iecms-user-manual",
+        "title": "IECMS Getting Started Guide \u2014 Public Users, Version 1.1 (2021)",
+        "issuing_authority": "Judicial Service Commission (IECMS)",
+        "document_type": "User manual / procedural guidance",
+        "tier": 3,
+        "court_or_jurisdiction": "Zimbabwe",
+        "publication_date": "2021",
+        "version_info": "Version 1.1 (2021)",
+        "verification_status": "pending",
+        "ocr": true,
+        "notes": "Official IECMS Getting Started Guide for public users, supplied by the project owner. The PDF is a scan with no text layer, so ingestion uses OCR; page numbers refer to the PDF pages. The live IECMS interface may have changed since 2021."
+      }
+    }
+  ]
+}
